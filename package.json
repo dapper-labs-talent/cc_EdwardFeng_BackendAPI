@@ -1,0 +1,58 @@
+{
+  "name": "cc_edwardfeng_backendapi",
+  "version": "1.0.0",
+  "description": "The focus of this assignment is to see how you would set up an API specifically for a web application.",
+  "scripts": {
+    "start": "npm run prod",
+    "server": "babel-node ./src/index.js",
+    "server:prod": "node .dist/index.js",
+    "dev": "NODE_ENV=development npm-run-all server",
+    "clean": "rimraf .dist",
+    "build": "babel ./src --out-dir .dist",
+    "prod": "NODE_ENV=production npm-run-all clean build server:prod",
+    "watch": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dapper-labs-talent/cc_EdwardFeng_BackendAPI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dapper-labs-talent/cc_EdwardFeng_BackendAPI/issues"
+  },
+  "nodemonConfig": {
+    "exec": "npm run dev",
+    "watch": ["src/*", "public/*"],
+    "ext": "js, html, css, json"
+  },
+  "homepage": "https://github.com/dapper-labs-talent/cc_EdwardFeng_BackendAPI#readme",
+  "dependencies": {
+    "@babel/runtime": "^7.18.9",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.4",
+    "multer": "^1.4.5-lts.1",
+    "npm-run-all": "^4.1.5",
+    "pino": "^8.4.2",
+    "pino-pretty": "^9.1.0",
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.13",
+    "@babel/eslint-parser": "^7.18.9",
+    "@babel/node": "^7.18.10",
+    "@babel/plugin-transform-runtime": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "eslint": "^8.23.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1"
+  }
+}
