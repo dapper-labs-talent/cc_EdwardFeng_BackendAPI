@@ -54,7 +54,7 @@ const getOneUser = (query) =>
       .catch(reject);
   });
 
-const editUser = ({ userId, fieldToUpdate }) =>
+const editUser = ({ userId, email, fieldToUpdate }) =>
   new Promise((resolve, reject) => {
     UserModel.findOne({ _id: userId, email })
       .then((user) => {
