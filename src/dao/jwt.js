@@ -14,4 +14,11 @@ const generateJwtToken = ({ userId, email }) =>
     }
   );
 
-export { generateJwtToken };
+const verifyJwtToken = ({ token }) =>
+  new Promise((resolve, reject) => {
+    jwt.verify(token, process.env.JWT_SECRET, (err, decoded) => {
+      return resolve({ decoded, err });
+    });
+  });
+
+export { generateJwtToken, verifyJwtToken };

@@ -1,6 +1,6 @@
 "use strict";
 
-import logger from "../../utilities/logger";
+import logger from "../utilities/logger";
 
 import { validateUserUpdateInputs } from "./validator/userValidator";
 import { getAllUsers, editUser } from "../dao/user";

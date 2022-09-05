@@ -1,6 +1,6 @@
 "use strict";
 
-import logger from "../../utilities/logger";
+import logger from "../utilities/logger";
 
 import { validateCreateInputs, validateLoginInputs } from "./validator/userValidator";
 import { createUser, getOneUser, checkPassword } from "../dao/user";
