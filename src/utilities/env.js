@@ -10,5 +10,6 @@ dotenv.config({
   slient: true,
 });
 
-export const getDatabase = () =>
-  process.env.ENV === DEVELOPEMENT ? process.env.DEV_DB : process.env.PROD_DB;
+export const getDatabase = () => {
+  return process.env.NODE_ENV === DEVELOPEMENT ? process.env.DEV_DB : process.env.PROD_DB;
+};

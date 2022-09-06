@@ -41,7 +41,7 @@ const editUserApi = async (req, res) => {
 
     await editUser({ userId, email, fieldToUpdate: { firstName, lastName } });
 
-    return res.status(STATUS_CODE_200);
+    return res.status(STATUS_CODE_200).end();
   } catch (err) {
     logger.error(err);
 

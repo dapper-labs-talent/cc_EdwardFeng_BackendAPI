@@ -7,6 +7,7 @@ const SELECTED_FIELDS = {
   email: 1,
   firstName: 1,
   lastName: 1,
+  password: 1,
 };
 
 const createUser = ({ email = "", password = "", lastName = "", firstName = "" }) => {
