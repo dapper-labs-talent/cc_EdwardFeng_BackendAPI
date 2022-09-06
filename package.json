@@ -23,7 +23,10 @@
   },
   "nodemonConfig": {
     "exec": "npm run dev",
-    "watch": ["src/*", "public/*"],
+    "watch": [
+      "src/*",
+      "public/*"
+    ],
     "ext": "js, html, css, json"
   },
   "homepage": "https://github.com/dapper-labs-talent/cc_EdwardFeng_BackendAPI#readme",
@@ -35,7 +38,6 @@
     "express": "^4.18.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.5.4",
-    "multer": "^1.4.5-lts.1",
     "npm-run-all": "^4.1.5",
     "pino": "^8.4.2",
     "pino-pretty": "^9.1.0",
