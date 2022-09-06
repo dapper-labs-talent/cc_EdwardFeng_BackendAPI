@@ -20,7 +20,13 @@ Is there anything you would have liked to implement but didn't have the time to?
 
 What are the security holes (if any) in your system? If there are any, how would you fix them?
 
+> I have addressed all the security measure I know of
 >
+> 1. hashing the password
+> 2. JWT token exchange for authentication
+> 3. Using ORM (Mongoose) wrapping around the database to deal with database injection.
+>
+> Would love to learn more about anything I don't know about. After all, I don't know what I don't know.
 
 Do you feel that your skills were well tested?
 
