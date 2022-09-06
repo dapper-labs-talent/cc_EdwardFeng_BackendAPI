@@ -16,7 +16,7 @@ Is there anything you would have liked to implement but didn't have the time to?
 >
 > 1. Could use TypeScript for better typing.
 > 2. Unit tests! It is always important to write unit tests for your work.
-> 3. Lots of DevOps work could be done. Could look to containerize the server. Potentially have the CI pipeline setup as well.
+> 3. Lots of DevOps work could be done. Could look to containerize the server. Potentially have the CI pipeline setup as well. Deployment to an actual domain.
 
 What are the security holes (if any) in your system? If there are any, how would you fix them?
 
